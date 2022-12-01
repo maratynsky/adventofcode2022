@@ -1,10 +1,17 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class Day1Test {
 
     @Test
-    void test() {
-        Assertions.assertEquals(24000, new Day1().resolve());
+    void testP1() {
+        assertEquals(24000, new Day1().resolveP1());
+    }
+
+    @Test
+    void testP2() {
+        assertEquals(45000, new Day1().resolveP2());
     }
 }
